@@ -81,7 +81,8 @@ tibble("Weight (g)" = 15,
        "5-day check" = TRUE)
 
 # Importing, no header:
-diamonds_base_nohead <- read_csv("ch02-r4py/data/diamonds_noheader.csv", header = F)
+diamonds_base_nohead <- read_csv("ch02-r4py/data/diamonds_noheader.csv", col_names = FALSE)
+
 names(diamonds_base_nohead)
 
 # Lists
